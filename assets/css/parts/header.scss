@@ -1,0 +1,21 @@
+header {
+	position: absolute;
+	width: 100%;
+	padding-top: 50px;
+	z-index: 10;
+}
+
+.projectxy {
+	&-logo {
+		h1 {
+			color: $white;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+.btn {
+	&-apply {
+		cursor: pointer;
+	}
+}

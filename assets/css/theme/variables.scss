@@ -1,0 +1,66 @@
+/**
+ * Bootstrap variables
+ */
+
+$grid-gutter-width: 30px;
+
+$font-family-base: 'Open Sans', sans-serif;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+/**
+ * Helper variables
+ */
+
+$all-text-inputs:
+	'input[type="color"]',
+	'input[type="date"]',
+	'input[type="datetime"]',
+	'input[type="datetime-local"]',
+	'input[type="email"]',
+	'input[type="month"]',
+	'input[type="number"]',
+	'input[type="password"]',
+	'input[type="search"]',
+	'input[type="tel"]',
+	'input[type="text"]',
+	'input[type="time"]',
+	'input[type="url"]',
+	'input[type="week"]',
+	'input:not([type])',
+	'textarea';
+
+$element-margin: 20px;
+
+/**
+ * Color variables
+ */
+
+$white: #fff;
+$black: #000;
+$gray: #e6e6e6;
+$red: #e44648;
+$blue: #00c3e6;
+$golden: #b6a482;
+$red1: #a7353a;
+$yellow: #fa0;
+$green: #4cbb17;
+$darkgreen: #094009;
+
+$link-color: #369;
+$text-color: #222;

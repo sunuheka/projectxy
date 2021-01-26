@@ -1,0 +1,4 @@
+@mixin m-mq( $breakpoint ) {
+	@error "Use `@include media-breakpoint-down` instead.";
+	@content;
+}

@@ -1,0 +1,236 @@
+:root {
+	font-size: 16px;
+	line-height: 1.7;
+	color: $text-color;
+}
+
+body {
+	font-size: 20px;
+	line-height: 1.6;
+	overflow-x: hidden;
+	font-family: $font-family-base;
+}
+
+.wrapper {
+	&-1140 {
+		max-width: 1140px;
+	}
+
+	&-805 {
+		max-width: 805px;
+	}
+}
+
+.project {
+	&_banner {
+		position: relative;
+
+		&-image {
+			min-height: 540px;
+			padding-top: 210px;
+			background-size: cover;
+			background-position: center;
+		}
+
+		h2,
+		p {
+			color: $white;
+		}
+
+		h2 {
+			position: relative;
+
+			span {
+				width: 95px;
+				height: 5px;
+				background-color: $black;
+				position: absolute;
+				bottom: -13px;
+				left: 50%;
+				margin-left: -40px;
+			}
+		}
+
+		.container {
+			position: relative;
+		}
+	}
+
+	&_works {
+		padding-top: 75px;
+		padding-bottom: 75px;
+
+		h2 {
+			position: relative;
+			margin-bottom: 45px;
+		}
+	}
+
+	&-workflow {
+		margin-left: -40px;
+		margin-right: -40px;
+	}
+
+	&-workflow-div {
+		position: relative;
+		height: 377px;
+		width: 33.3333%;
+		display: flex;
+		padding: 30px;
+		padding-left: 40px;
+		padding-right: 40px;
+
+		&.company-name {
+			h3 {
+				color: $yellow;
+			}
+		}
+
+		&.company-login {
+			h3 {
+				color: $blue;
+			}
+		}
+
+		&.company-report {
+			.project-workflow-inner:after {
+				display: none;
+			}
+
+			h3 {
+				color: $green;
+			}
+		}
+
+		p {
+			font-size: 11px;
+			padding-left: 50px;
+			padding-right: 50px;
+			letter-spacing: 1.2px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			font-size: 1.2rem;
+		}
+	}
+
+	&-workflow-white-circle {
+		background-color: #fff;
+		border-radius: 50%;
+		margin: 30px;
+		box-shadow: -8px 6px 25px 6px rgba( 0, 0, 0, 0.3 );
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	&-workflow-inner {
+		position: relative;
+		height: 100%;
+		display: flex;
+
+		&:before {
+			content: '';
+			background-image: url( '../img/circle.png' );
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		&:after {
+			content: '';
+			background-image: url( '../img/arrow.png' );
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+			right: -79px;
+			bottom: 133px;
+			width: 80px;
+			height: 47px;
+		}
+	}
+
+	&_form {
+		position: relative;
+		background-color: $gray;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		overflow: hidden;
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: -40px;
+			background-image: url( '../img/rocket.png' );
+			background-position: bottom right;
+			background-size: 100%;
+			width: 330px;
+			height: 550px;
+		}
+	}
+
+	&-form {
+		.d-flex {
+			flex-wrap: wrap;
+			margin-left: -45px;
+			margin-right: -45px;
+		}
+
+		.form-group {
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding: 25px 45px;
+		}
+
+		label {
+			font-size: 16px;
+			padding-bottom: 8px;
+		}
+	}
+}
+
+.overlay-bg {
+	background-color: rgba( 0, 0, 0, 0.5 );
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.svg-icon {
+	display: inline-block;
+
+	+ h3 {
+		margin-top: 20px;
+		margin-bottom: 8px;
+	}
+}
+
+.header-underline {
+	position: absolute;
+	left: 50%;
+	bottom: -12px;
+	margin-left: -40px;
+	width: 96px;
+	height: 4px;
+	background-color: $black;
+}
+
+.form {
+	&-btn {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		padding-right: 45px;
+		padding-top: 50px;
+	}
+}

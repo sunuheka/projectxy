@@ -1,0 +1,4 @@
+.post-type-project #districtdiv,
+.post-type-project #provincediv {
+	display: none;
+}

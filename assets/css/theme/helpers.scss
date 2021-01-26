@@ -1,0 +1,34 @@
+// Alignment
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.text-nowrap { white-space: nowrap; }
+
+// Transformation
+.text-lowercase { text-transform: lowercase; }
+.text-uppercase { text-transform: uppercase; }
+.text-capitalize { text-transform: capitalize; }
+
+.no-gutter [class*='col-'] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+// Bootstrap classes
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect( 0, 0, 0, 0 );
+	border: 0;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

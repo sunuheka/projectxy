@@ -1,0 +1,31 @@
+@import "../cache/import-maps/_dependencies";
+@import "../cache/import-maps/_vendor";
+@import "../cache/import-maps/_parts";
+
+:root {
+	font-size: 16px;
+
+	body {
+		font-size: 1rem;
+		line-height: 1.7;
+		color: #222;
+	}
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
+}
+
+a {
+	color: #369;
+
+	&:hover {
+		color: fadeout( #369, 10% );
+		text-decoration: underline;
+	}
+}
