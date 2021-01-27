@@ -164,6 +164,11 @@ body {
 		padding-bottom: 50px;
 		overflow: hidden;
 
+		.container {
+			position: relative;
+			z-index: 10;
+		}
+
 		&:after {
 			content: '';
 			position: absolute;
@@ -174,6 +179,7 @@ body {
 			background-size: 100%;
 			width: 330px;
 			height: 550px;
+			z-index: 0;
 		}
 	}
 
@@ -232,5 +238,12 @@ body {
 		width: 100%;
 		padding-right: 45px;
 		padding-top: 50px;
+	}
+}
+
+footer {
+	p,
+	a {
+		color: $white;
 	}
 }
