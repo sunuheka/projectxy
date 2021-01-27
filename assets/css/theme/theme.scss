@@ -1,3 +1,59 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url( '../font/OpenSans.eot' );
+	src:
+		url( '../font/OpenSans.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( '../font/OpenSans.woff2' ) format( 'woff2' ),
+		url( '../font/OpenSans.woff' ) format( 'woff' ),
+		url( '../font/OpenSans.ttf' ) format( 'truetype' ),
+		url( '../font/OpenSans.svg#OpenSans' ) format( 'svg' );
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url( '../font/OpenSans-Light.eot' );
+	src:
+		url( '../font/OpenSans-Light.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( '../font/OpenSans-Light.woff2' ) format( 'woff2' ),
+		url( '../font/OpenSans-Light.woff' ) format( 'woff' ),
+		url( '../font/OpenSans-Light.ttf' ) format( 'truetype' ),
+		url( '../font/OpenSans-Light.svg#OpenSans-Light' ) format( 'svg' );
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url( '../font/OpenSans-Bold.eot' );
+	src:
+		url( '../font/OpenSans-Bold.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( '../font/OpenSans-Bold.woff2' ) format( 'woff2' ),
+		url( '../font/OpenSans-Bold.woff' ) format( 'woff' ),
+		url( '../font/OpenSans-Bold.ttf' ) format( 'truetype' ),
+		url( '../font/OpenSans-Bold.svg#OpenSans-Bold' ) format( 'svg' );
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url( '../font/OpenSans-Semibold.eot' );
+	src:
+		url( '../font/OpenSans-Semibold.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( '../font/OpenSans-Semibold.woff2' ) format( 'woff2' ),
+		url( '../font/OpenSans-Semibold.woff' ) format( 'woff' ),
+		url( '../font/OpenSans-Semibold.ttf' ) format( 'truetype' ),
+		url( '../font/OpenSans-Semibold.svg#OpenSans-Semibold' ) format( 'svg' );
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	font-size: 16px;
 	line-height: 1.7;
@@ -64,6 +120,10 @@ body {
 				left: 50%;
 				margin-left: -40px;
 			}
+		}
+
+		p {
+			font-weight: 300;
 		}
 
 		.container {
@@ -248,6 +308,7 @@ body {
 
 		p.text-center {
 			opacity: 0.6;
+			font-size: 1rem;
 		}
 
 		&:after {
