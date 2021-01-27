@@ -1,4 +1,101 @@
-footer {
+.trs {
+	transition: all 0.3s linear;
+}
+
+.footer {
 	background-color: $darkgreen;
 	padding: 50px;
+	color: $white;
+
+	p,
+	a {
+		color: $white;
+	}
+
+	h5 {
+		font-size: 1.3rem;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: 0.8rem;
+		line-height: 1.8;
+		font-weight: 300;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	&_about {
+		padding-right: 100px;
+
+		h5 {
+			font-size: 1.5rem;
+		}
+
+		a {
+			&:hover {
+				text-decoration: underline;
+				opacity: 0.8;
+			}
+
+			+ a {
+				padding-left: 10px;
+				margin-left: 10px;
+				border-left: 1px solid $white;
+			}
+		}
+	}
+
+	&_links {
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				a {
+					font-size: 0.8rem;
+					padding-left: 10px;
+					position: relative;
+
+					&:hover {
+						opacity: 0.8;
+
+						span {
+							text-decoration: underline;
+						}
+					}
+
+					&:before {
+						content: '\203A';
+						position: absolute;
+						left: 0;
+						top: -1px;
+						font-size: 14px;
+						line-height: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&_social {
+		a {
+			+ a {
+				padding-left: 5px;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	&_contact {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
 }

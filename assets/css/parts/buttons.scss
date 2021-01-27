@@ -3,6 +3,7 @@
 	padding: 6px 20px;
 	min-height: 40px;
 	color: $white;
+	transition: all 0.3s linear;
 
 	&.btn-loading {
 		min-height: 1.2em;
@@ -35,9 +36,18 @@
 
 	&-outline {
 		border: 1px solid $white;
+
+		&:hover {
+			background-color: $white;
+		}
 	}
 
 	&-green {
 		background-color: $green;
+
+		&:hover {
+			background-color: $darkgreen;
+			color: $white;
+		}
 	}
 }

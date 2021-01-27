@@ -5,12 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <link href="http://localhost/projectxy/assets/dist/style.min.css?ver=0.0.1" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-    <title>Company</title>
+    <link href="assets/dist/style.min.css?ver=0.0.1" rel="stylesheet" >
+
+    <title>Company</title>    
   </head>
 
   <body>
@@ -18,7 +23,7 @@
       <div class="container">
         <div class="d-flex justify-content-between">
           <div class="projectxy-logo">
-            <h1>ProjectXY</h1>
+            <h1><a href="#">ProjectXY</a></h1>
           </div>
           <div class="header-right">
             <button class="btn btn-outline btn-apply">Apply Now</button>
@@ -28,12 +33,12 @@
     </header> 
 
     <section class="project_banner">
-      <div class="project_banner-image" style="background-image: url('http://localhost:8080/projectxy/assets/img/banner.png')">
-        <!-- <img src="http://localhost:8080/projectxy/assets/img/banner.png" alt="" style="opacity: 0;"> -->
+      <div class="project_banner-image" style="background-image: url('assets/img/banner.png')">
+        <!-- <img src="assets/img/banner.png" alt="" style="opacity: 0;"> -->
         <div class="overlay-bg"></div>
         <div class="container">
           <div class="row">
-            <div class="col-sm-10">  
+            <div class="col-sm-9">  
               <h2>ProjectXY connects you to a diverse nationwide network of qualified lenders.</h2>
               <p>We can help companies with positiove cash flow to borrow up to $10 Million.</p>
             </div>
@@ -46,7 +51,9 @@
       <div class="container wrapper-1140">
         <div class="text-center"><h2>How ProjectXY works <span class="header-underline"></span></h2></div>
         <div class="project-workflow d-flex justify-content-center">
+          
           <div class="project-workflow-div company-name">
+            <a href="#">
             <div class="project-workflow-inner">
               <div class="project-workflow-white-circle">
                 <span class="svg-icon">
@@ -65,8 +72,14 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
+            <div class="project-workflow-small-div">
+              <div class="yellow-circle project-workflow-small-circle"><span>01</span></div>
+            </div>
+          </a>
           </div>
+       
           <div class="project-workflow-div company-login">
+            <a href="#">
             <div class="project-workflow-inner">
               <div class="project-workflow-white-circle">
                 <span class="svg-icon">
@@ -85,8 +98,13 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             </div>
+            <div class="project-workflow-small-div">
+              <div class="blue-circle project-workflow-small-circle"><span>02</span></div>
+            </div>
+          </a>
           </div>
           <div class="project-workflow-div company-report">
+            <a href="">
             <div class="project-workflow-inner">
               <div class="project-workflow-white-circle">
                 <span class="svg-icon">
@@ -98,7 +116,11 @@
                 <h3>Projextxy Report</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-          </div>
+            </div>
+            <div class="project-workflow-small-div">
+              <div class="green-circle project-workflow-small-circle"><span>03</span></div>
+            </div>
+          </a>
         </div>
         </div>
       </div>
@@ -107,159 +129,304 @@
     <section class="project_form">
       <div class="container wrapper-805">
         <h2 class="text-center">Lets get started</h2>
-        <p class="text-center">All data are protected and that [ersonal information will not be sold.</p>
+        <p class="text-center">All data are protected and that personal information will not be sold.</p>
 
         <div class="project-form">
-        <form class="d-flex">
+        <form class="d-flex form">
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect1">Company Sales range</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect1">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
           
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect2">EBITDA</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect2">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect3">Industry</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect3">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect4">Load Type</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect4">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect5">Loan Term</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect5">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect6">Lorem Ipsum</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect6">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect7">Lorem Ipsum</label>
+            <select class="form-control"  data-placeholder="Select one" id="FormControlSelect7">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect8">Lorem Ipsum</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect8">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect9">Lorem Ipsum</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect9">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="FormControlSelect10">Lorem Ipsum</label>
+            <select class="form-control" data-placeholder="Select one" id="FormControlSelect10">
+              <option selected disabled>Select one</option>
+              <option>1-2 Million</option>
+              <option>3-5 Million</option>
+              <option>5-7 Million</option>
+              <option>7-9</option>
             </select>
           </div>
 
-          <div class="form-btn">
+          <div class="progressbardiv">
+          <div class="progressbar">
+            <div id="count"></div>            
+          </div>
+          <span class="count-number">0%</span>
+          </div>
+
+          <div class="form-btn disable-btn">
             <button class="btn btn-green">Submit</button>
-          </div>
-          
+          </div>          
         </form>
+
         </div>
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-5 footer_about">
             <h5>ProjectXY</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt labore porro ipsum, cumque quisquam illo assumenda nulla unde magni saepe qui harum impedit enim architecto praesentium reiciendis maiores tenetur.</p>
-            <p><a href="#">Terms of use</a> | <a href="#">Privacy Policy</a></p>
+            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrasing in the middle of text.</p>
+            <p><a href="#">Terms of use</a><a href="#">Privacy Policy</a></p>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 footer_links">
             <h5>Links</h5>
+            <ul>
+              <li><a href="#"><span>About us</span></a></li>
+              <li><a href="#"><span>Services</span></a></li>
+              <li><a href="#"><span>Projects</span></a></li>
+              <li><a href="#"><span>Careers</span></a></li>
+              <li><a href="#"><span>Contact us</span></a></li>
+            </ul>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2 footer_social">
             <h5>Follow Us</h5>
+            <a href="#" class="icon_ln">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="25"
+	 viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
+<path style="fill:#fff;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+	C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+	H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
+	c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+	s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+	c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+	c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+	c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+	L341.91,330.654L341.91,330.654z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+            </a>
+            <a href="#" class="icon_fb">              
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="25"
+                 viewBox="0 0 408.788 408.788" style="enable-background:new 0 0 408.788 408.788;" xml:space="preserve">
+              <path style="fill:#fff;" d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085
+                h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882
+                v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955
+                l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087
+                c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085
+                C408.786,24.662,384.124,0,353.701,0z"/>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              </svg>
+              
+
+            </a>
+            <a href="#" class="icon_insta">
+              <svg viewBox="0 0 512.00096 512.00096" width="25" height="25"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm-117.40625 395.996094c-77.195312 0-139.996094-62.800782-139.996094-139.996094s62.800782-139.996094 139.996094-139.996094 139.996094 62.800782 139.996094 139.996094-62.800782 139.996094-139.996094 139.996094zm143.34375-246.976563c-22.8125 0-41.367188-18.554687-41.367188-41.367187s18.554688-41.371094 41.367188-41.371094 41.371094 18.558594 41.371094 41.371094-18.558594 41.367187-41.371094 41.367187zm0 0"/><path d="m256 146.019531c-60.640625 0-109.980469 49.335938-109.980469 109.980469 0 60.640625 49.339844 109.980469 109.980469 109.980469 60.644531 0 109.980469-49.339844 109.980469-109.980469 0-60.644531-49.335938-109.980469-109.980469-109.980469zm0 0"/><path d="m399.34375 96.300781c-6.257812 0-11.351562 5.09375-11.351562 11.351563 0 6.257812 5.09375 11.351562 11.351562 11.351562 6.261719 0 11.355469-5.089844 11.355469-11.351562 0-6.261719-5.09375-11.351563-11.355469-11.351563zm0 0"/></svg>
+            </a>
+            <a href="#" class="icon_google">
+              <img src="assets/img/google.png" alt="">
+            </a>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2 footer_contact">
             <h5>Contact Us</h5>
+            <p>+123 12 12121212</p>
           </div>
         </div>
       </div>
-    </footer>
+    </footer>   
 
-   
-
-
+    <script src="assets/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script>
+    jQuery(document).ready(function() {
+      $('select').on('change', function(){
+      let progress = 0;
+      let count = 0;      
+
+      $('select').each(function(){
+      //checking if there is any value selected
+      if($(this).val() != null) {
+        progress = progress + 1;
+      }
+
+      //determine the number of select
+      count = count + 1;
+      })
+
+      let counttext = (progress/count)*100 + '%';
+
+      $("#count").css('width', counttext);
+      $(".count-number").html(counttext);
+
+      if(count == progress) {
+        $('#count').addClass('successbar');
+        $('.form-btn').removeClass('disable-btn');
+      }
+      else {
+        $('#count').removeClass('successbar');
+        $('.form-btn').addClass('disable-btn');
+      }
+
+      })
+        
+        jQuery('select').select2({
+          minimumResultsForSearch: -1
+        });
+  });
+
+
+  </script>
+
+ 
   </body>
 </html>

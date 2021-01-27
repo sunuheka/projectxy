@@ -11,6 +11,10 @@ body {
 	font-family: $font-family-base;
 }
 
+.trs {
+	transition: all 0.3s linear;
+}
+
 .wrapper {
 	&-1140 {
 		max-width: 1140px;
@@ -39,6 +43,9 @@ body {
 
 		h2 {
 			position: relative;
+			font-size: 2.8rem;
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
 
 			span {
 				width: 95px;
@@ -69,6 +76,11 @@ body {
 	&-workflow {
 		margin-left: -40px;
 		margin-right: -40px;
+
+		@media all and ( max-width: 1024px ) {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
 	}
 
 	&-workflow-div {
@@ -79,6 +91,29 @@ body {
 		padding: 30px;
 		padding-left: 40px;
 		padding-right: 40px;
+
+		@media all and ( max-width: 1024px ) {
+			height: calc( 100vw / 3 + 30px );
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		a {
+			text-decoration: none;
+			color: $text-color;
+
+			@extend .trs;
+
+			&:hover {
+				.project-workflow-white-circle {
+					box-shadow: 0 0 5px 0 rgba( 0, 0, 0, 0.3 );
+				}
+
+				.project-workflow-small-div {
+					box-shadow: 0 0 5px 0 rgba( 0, 0, 0, 0.3 );
+				}
+			}
+		}
 
 		&.company-name {
 			h3 {
@@ -154,19 +189,30 @@ body {
 			bottom: 133px;
 			width: 80px;
 			height: 47px;
+
+			@media all and ( max-width: 1024px ) {
+				height: 47px;
+				width: 36px;
+				background-size: 34px;
+				right: -30px;
+			}
 		}
 	}
 
 	&_form {
 		position: relative;
 		background-color: $gray;
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 		overflow: hidden;
 
 		.container {
 			position: relative;
 			z-index: 10;
+		}
+
+		p.text-center {
+			opacity: 0.6;
 		}
 
 		&:after {
@@ -180,6 +226,14 @@ body {
 			width: 330px;
 			height: 550px;
 			z-index: 0;
+
+			@media all and ( max-width: 1024px ) {
+				width: 10%;
+			}
+		}
+
+		h2 {
+			margin-bottom: 10px;
 		}
 	}
 
@@ -199,6 +253,42 @@ body {
 		label {
 			font-size: 16px;
 			padding-bottom: 8px;
+		}
+	}
+
+	&-workflow-small-div {
+		position: absolute;
+		right: 20px;
+		top: 40px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: #fff;
+		box-shadow: 0 0 14px #a7a4a4;
+		padding: 10px;
+		display: flex;
+
+		.project-workflow-small-circle {
+			border-radius: 50%;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			font-size: 36px;
+			font-weight: 700;
+			justify-content: center;
+			color: #fff;
+		}
+
+		.yellow-circle {
+			background-color: $yellow;
+		}
+
+		.blue-circle {
+			background-color: $blue;
+		}
+
+		.green-circle {
+			background-color: $green;
 		}
 	}
 }
@@ -238,12 +328,110 @@ body {
 		width: 100%;
 		padding-right: 45px;
 		padding-top: 50px;
+
+		&.disable-btn {
+			pointer-events: none;
+			opacity: 0.5;
+		}
+
+		.btn {
+			width: 135px;
+		}
+	}
+
+	.select2-container {
+		&.select2-container--default {
+			.select2-selection--single {
+				height: 45px;
+				border: 1px solid #425757;
+
+				.select2-selection__rendered {
+					line-height: 45px;
+					font-size: 1rem;
+				}
+
+				.select2-selection__arrow {
+					top: 18px;
+
+					b {
+						display: none;
+					}
+
+					&:before,
+					&:after {
+						top: 100%;
+						left: 50%;
+						border: solid transparent;
+						content: "";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+					}
+
+					&:before {
+						border-color: rgba( 194, 225, 245, 0 );
+						border-top-color: $black;
+						border-width: 10px;
+						margin-left: -10px;
+						position: absolute;
+						left: 0;
+						top: 0;
+					}
+
+					&:after {
+						border-color: rgba( 136, 183, 213, 0 );
+						border-top-color: $white;
+						border-width: 8px;
+						margin-left: -8px;
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+			}
+		}
 	}
 }
 
-footer {
-	p,
-	a {
-		color: $white;
+.select2-results__option--selectable {
+	font-size: 1rem !important;
+	border-bottom: 1px solid #425757 !important;
+
+	&:last-child {
+		border-bottom: none !important;
+	}
+}
+
+.select2-container--default .select2-results__option--disabled {
+	display: none !important;
+}
+
+.select2-dropdown {
+	border: 1px solid #425757 !important;
+}
+
+.progressbar {
+	width: 100%;
+	height: 10px;
+	background-color: $gray;
+	border-radius: 5px;
+	margin: 50px auto 10px;
+	overflow: hidden;
+	border: 1px solid #425757;
+
+	&div {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+#count {
+	background: #f7ff1d;
+	height: 10px;
+	width: 0;
+
+	&.successbar {
+		background-color: #4cbb17;
 	}
 }
